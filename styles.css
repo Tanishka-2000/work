@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    box-shadow: 1px 1px 6px 3px #ddd;
+}
+
+nav ul{
+    max-width: 1200px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 15px 20px 5px;
+    font-size: 1.1rem;
+    color: #888;  
+    font-weight: 700;
+}
+
+nav ul li.logo{
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+
+nav ul li.work{
+    color: #444;
+}
+
+.container {
+    height: calc(100vh - 50px);
+    display: grid;
+    place-content: center;
+}
+
+.center{
+    position: relative;
+    text-align: center;
+}
+
+img.girl{
+    width: 250px;
+}
+
+.info{
+    display: grid;
+    gap: 3px;
+    font-size: 1rem;
+    color: #222;
+}
+
+.info p{
+    font-size: 20px; 
+}
+
+@media (width < 720px) {
+    nav ul{
+        gap: 30px;
+        font-size: .8rem;
+    }
+    
+    nav ul li.logo{
+        font-size: 1rem;
+    }
+}
+
+/* icons */
+
+.icons{
+    --main-deviation: 350px;
+    --diagnol-deviation: 250px;
+}
+
+.icons .material-symbols-outlined{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ccc;
+    padding: 15px;
+    font-size: 4rem;
+    top: 42%;
+    left: 35%;
+    cursor: pointer;
+}
+
+.icons .odinbook{
+    color: #19A7CE;
+    background-color: #19A7CE30;
+    transform: translate(calc(var(--diagnol-deviation) * -1), calc(var(--diagnol-deviation) * -1));
+}
+
+.icons .clubhouse{
+    color: #F65A83;
+    background-color: #F65A8330;
+    transform: translate(calc(var(--main-deviation) * -1), 0);
+}
+
+.icons .waldo{
+    color: #80ff00;
+    background-color: #80ff0030;
+    transform: translate(calc(var(--diagnol-deviation) * -1), var(--diagnol-deviation));
+}
+
+.icons .airbnb{
+    color: #ffd900;
+    background-color: #ffd90030;
+    transform: translate(0px, calc(var(--main-deviation) * -1));
+}
+
+.icons .blog{
+    color: #50524f;
+    background-color: #50524f30;
+    transform: translate(var(--main-deviation), 0px);
+}
+
+.icons .inventory{
+    color: #a54816;
+    background-color: #a5481630;
+    transform: translate(var(--diagnol-deviation), calc(var(--diagnol-deviation) * -1));
+}
+
+.icons .weather{
+    color: #8000ff;
+    background-color: #8000ff30;
+    transform: translate(var(--diagnol-deviation), var(--diagnol-deviation));
+}
+
+.icons .sketch{
+    color: #fc6b04;
+    background-color: #fc6b0430;
+    transform: translate(0px, var(--main-deviation));
+}
+
+@media (width < 1000px) or (height < 1000px) {
+    img.girl{
+        width: 200px;
+    }
+
+    .info h1{
+        font-size: 1.5rem;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .icons{
+        --main-deviation: 280px;
+        --diagnol-deviation: 207px;
+    }
+    
+    .icons .material-symbols-outlined{
+        font-size: 3rem;
+    }
+}
+
+@media (width < 720px) or (height < 720px) {
+    img.girl{
+        width: 100px;
+    }
+
+    .info h1{
+        font-size: 1rem;
+    }
+
+    .info p{
+        font-size: 12px;
+    }
+
+    .icons{
+        --main-deviation: 155px;
+        --diagnol-deviation: 110px;
+    }
+    
+    .icons .material-symbols-outlined{
+        font-size: 1.7rem;
+        padding: 10px;
+    }
+}
+
+/* -----card------- */
+.card{
+    position: absolute;
+    background-color: #fefefe;
+    width: 360px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #eee;
+    padding: 12px;
+    transform: scale(0);
+    transition: transform 300ms ease;
+    display: grid;
+    gap: 10px;
+}
+
+.card header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.card header .links{
+    display: flex;
+    gap: 10px;
+}
+
+.card header .links img{
+    width: 25px;
+}
+
+.card header .links a span{
+    font-size: 28px;
+    color: #000;
+}
+
+.card .stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.card .stack span{
+    background-color: #ddd;
+    padding: 3px 7px;
+    border-radius: 15px;
+}
+
+.show{
+    transform: scale(1);
+}
+
+@media (width < 720px) or (height < 720px)  {
+    .card{
+        width: 300px;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .show{
+        transform: scale(1) translate(-50%, -50%);
+    }
+}

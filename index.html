@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo">Portfolio</li>
+            <li>Home</li>
+            <li class="work">Work</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="center">
+                <img class="girl" src="girl.jpg"/>
+                <div class="info">
+                    <h1>Hi, <br /> I'm Tanishka Talwar</h1>
+                    <p>a web developer</p>
+                </div>
+                <div class="icons">
+                    <span class="material-symbols-outlined odinbook" data-project="odinbook" data-pos="left bottom">phone_iphone</span>
+                    <span class="material-symbols-outlined clubhouse" data-project="clubhouse" data-pos="left middle">cottage</span>
+                    <span class="material-symbols-outlined inventory" data-project="inventory" data-pos="right bottom">shelves</span>
+                    <span class="material-symbols-outlined airbnb" data-project="airbnb" data-pos="middle bottom">emoji_transportation</span>
+                    <span class="material-symbols-outlined blog" data-project="blog" data-pos="right middle">history_edu</span>
+                    <span class="material-symbols-outlined waldo" data-project="waldo" data-pos="left top">image_search</span>
+                    <span class="material-symbols-outlined weather" data-project="weather" data-pos="right top">thermostat</span>
+                    <span class="material-symbols-outlined sketch" data-project="sketch" data-pos="middle top">stylus_note</span>
+                </div>
+                
+            </div>
+
+            <!-- projects -->
+            <div class="projects">
+            
+                <div class="card" id="odinbook">
+                    <header>
+                        <div>
+                            <h2>Odinbook</h2>
+                            <p class="descp">A Facebook clone</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/odinbook' target='_blank'><img src="github.svg"/></a>
+                            <a href='https://tanishka-odinbook.netlify.app/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Odinbook is an attempt to clone the core functionality of facebook. You can create an account, make friends, share posts, view your friends' posts and much more.</p>
+                    <div class="stack">
+                        <span>React</span>
+                        <span>React Router</span>
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>MongoDb</span>
+                        <span>Passport.js</span>
+                    </div>
+                </div>
+
+                <div class="card" id="clubhouse">
+                    <header>
+                        <div>
+                            <h2>Members Only</h2>
+                            <p class="descp">An exclusive clubhouse</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/members-only' target='_blank'><img src="github.svg"/></a>
+                            <a href='https://members-only-p9vl.onrender.com/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Welcome to my clubhouse where the members can write anonymous posts. Inside the clubhouse, members can see who the author of a post is, but outside they can only see the story and wonder who wrote it.</p>
+                    <div class="stack">
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>Ejs</span>
+                        <span>MongoDb</span>
+                        <span>Passport.js</span>
+                    </div>
+                </div>
+
+                <div class="card" id="inventory">
+                    <header>
+                        <div>
+                            <h2>Inventory App</h2>
+                            <p class="descp">Inventory Management App</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/inventory-application' target='_blank'><img src="github.svg"/></a>
+                            <a href='https://inventory-fgyk.onrender.com/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Need help to manage your store's inventory? We are here for you. With this app you can easily manage all the food categories and all the items under it.</p>
+                    <div class="stack">
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>MongoDb</span>
+                        <span>Ejs</span>
+                    </div>
+                </div>
+
+                <div class="card" id="airbnb">
+                    <header>
+                        <div>
+                            <h2>Airbnb Clone</h2>
+                            <p class="descp">A hotels searching site</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/airbnb-clone' target='_blank'><img src="github.svg"/></a>
+                            <a href='tanishka-airbnb-clone.netlify.app/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Looking for a place to stay on your next vacation? This web app will provide you with a list of hotels from all around the world. You can search for hotels in different regions and of various categories.</p>
+                    <div class="stack">
+                        <span>React</span>
+                        <span>React Router</span>
+                        <span>Third Party APIs</span>
+                    </div>
+                </div>
+
+                <div class="card" id="blog">
+                    <header>
+                        <div>
+                            <h2>Blog Website</h2>
+                            <p class="descp">A personal blog website</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/blog-website' target='_blank'><img src="github.svg"/></a>
+                            <a href='https://tanishkablog.netlify.app/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Want your own personal blog? Here it is! A home for all your blog posts. You can see a list of all blogs, read any blog and comment on it.</p>
+                    
+                    <div class="stack">
+                        <span>React</span>
+                        <span>React Router</span>
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>MongoDb</span>
+                        <span>Passport.js</span>
+                    </div>
+                </div>
+
+                <div class="card" id="waldo">
+                    <header>
+                        <div>
+                            <h2>Where's Waldo</h2>
+                            <p class="descp">A photo tagging app</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/where-s-waldo' target='_blank'><img src="github.svg"/></a>
+                            <a href='tanishka-2000.github.io/where-s-waldo/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    <p>This is a puzzle game from your childhood where you have to find a few elements from a big image. Here you can choose different images to play on and set a high score.</p>
+                    <div class="stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+
+                <div class="card" id="weather">
+                    <header>
+                        <div>
+                            <h2>Weather App</h2>
+                            <p class="descp">A weather app</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/weather-app' target='_blank'><img src="github.svg"/></a>
+                            <a href='https://tanishka-2000.github.io/weather-app/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    
+                    <p>Wondering whether you should carry an umbrella or not? On this weather app, find out the weather of any city in the world. Gives you a weather forecast of upto 5 days.</p>
+                    <div class="stack">
+                        <span>HTML</span>
+                        <span>CSS </span>
+                        <span>Javascript</span>
+                        <span>Third-party APIs</span>
+                    </div>
+                </div>
+
+                <div class="card" id="sketch">
+                    <header>
+                        <div>
+                            <h2>Etch-a-Sketch</h2>
+                            <p class="descp">A sketching pad</p>
+                        </div>
+                        <div class="links">
+                            <a href='https://github.com/Tanishka-2000/Etch-a-Sketch' target='_blank'><img src="github.svg"/></a>
+                            <a href='tanishka-2000.github.io/Etch-a-Sketch/' target='_blank'><span class="material-symbols-outlined">open_in_new </span></a>
+            
+                        </div>
+                    </header>
+                    <p>A sketch pad where you can draw your feelings out. You can adjust the size of the pencil, erase your current drawing and change the color of the pencil.</p>
+                    <div class="stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
