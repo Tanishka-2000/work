@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -38,6 +41,12 @@ nav ul li.work{
     height: calc(100vh - 50px);
     display: grid;
     place-content: center;
+}
+
+@media (orientation: portrait) {
+    .container {
+        height: calc(100vh - 200px);
+    }
 }
 
 .center{
@@ -85,7 +94,7 @@ img.girl{
     padding: 15px;
     font-size: 4rem;
     top: 42%;
-    left: 35%;
+    left: 34%;
     cursor: pointer;
 }
 
@@ -152,17 +161,19 @@ img.girl{
 
     .icons{
         --main-deviation: 280px;
-        --diagnol-deviation: 207px;
+        --diagnol-deviation: 200px;
     }
     
     .icons .material-symbols-outlined{
-        font-size: 3rem;
+        font-size: 3.5rem;
+        top: 40%;
+        left: 30%;
     }
 }
 
-@media (width < 720px) or (height < 720px) {
+@media (width < 680px) or (height < 680px) {
     img.girl{
-        width: 100px;
+        width: 125px;
     }
 
     .info h1{
@@ -174,13 +185,14 @@ img.girl{
     }
 
     .icons{
-        --main-deviation: 155px;
-        --diagnol-deviation: 110px;
+        --main-deviation: 170px;
+        --diagnol-deviation: 120px;
     }
     
     .icons .material-symbols-outlined{
-        font-size: 1.7rem;
+        font-size: 2.3rem;
         padding: 10px;
+        left: 28%;
     }
 }
 
