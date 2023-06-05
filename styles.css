@@ -33,8 +33,14 @@ nav ul li.logo{
     font-size: 1.4rem;
 }
 
-nav ul li.work{
+nav ul li a{
+    color: #888;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
     color: #444;
+    text-decoration: underline;
 }
 
 .container {
@@ -254,6 +260,8 @@ img.girl{
         width: 300px;
         height: auto;
         font-size: 12px;
+        top: 50%;
+        left: 50%;
     }
 
     .show{

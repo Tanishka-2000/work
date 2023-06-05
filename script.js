@@ -16,10 +16,10 @@ icons.forEach(icon => {
         if(window.innerWidth < 1600 && window.innerHeight > 1000) position[0] = changePos(position[0]);
         else if(window.innerWidth < 1430 && window.innerHeight <= 1000) position[0] = changePos(position[0]);
 
-        if(window.innerWidth < 720 || window.innerHeight < 720){
-             project.style.left = '50%';
-             project.style.top = '50%';
-            }
+        // if(window.innerWidth < 720 || window.innerHeight < 720){
+        //      project.style.left = '50%';
+        //      project.style.top = '50%';
+        //     }
         else setPos(position, project, left, top);
         
 
