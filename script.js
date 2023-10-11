@@ -3,7 +3,7 @@ const cardWidth = 350;
 const cardHeigth = 240;
 
 const icons = document.querySelectorAll('.icons span');
-
+// left middle
 icons.forEach(icon => {
     icon.addEventListener('click', e => {
 
@@ -13,19 +13,21 @@ icons.forEach(icon => {
 
         // calculating position of the project card
         let position = e.target.dataset.pos.split(' ');
-        if(window.innerWidth < 1600 && window.innerHeight > 1000) position[0] = changePos(position[0]);
-        else if(window.innerWidth < 1430 && window.innerHeight <= 1000) position[0] = changePos(position[0]);
 
-        // if(window.innerWidth < 720 || window.innerHeight < 720){
-        //      project.style.left = '50%';
-        //      project.style.top = '50%';
-        //     }
-        else setPos(position, project, left, top);
+        // card need to be shown inside icons circle for less wider screens
+        if(window.innerWidth < 1600) position[0] = changePos(position[0]); 
+
+        // for small devices, show project card in the middle
+        if(window.innerWidth < 760 ){
+             project.style.left = '50%';
+             project.style.top = '50%'; 
+            }
+        else setPos(position, project, left, top);        
         
-
+        // scale project card
         project.classList.add('show');
 
-        // hide current opened project if any
+        // hide current opened project card if any
         if(currentProject) currentProject.classList.remove('show')
         currentProject = project;
         e.stopPropagation();
@@ -45,6 +47,7 @@ function changePos(position){
 
 function setPos(position, project, left, top) {
     
+console.log({position, project, left, top})
     if(position[0] === 'left') project.style.left = left - cardWidth - 20 + 'px';
     else if (position[0] === 'middle') project.style.left = left - cardWidth/2 + 35 + 'px';
     else  project.style.left = left + 100 + 'px';
